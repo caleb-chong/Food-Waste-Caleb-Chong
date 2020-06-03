@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Food Waste</title>
+	<link rel="stylesheet" type="text/css" href="calebchongthirdwebsite.css">
+<script>
+  alert("Let's start off with a quiz!")
+    var think=prompt("How much food do you think the average household wastes? Please give a number out of 100 (e.g. 35)")
+    if (think==="31.9") {alert("Good job! You got it right! For more, be sure to check out the 'How much food do you waste?' quiz on my site!")}
+else if (think!=="31.9") {alert("The average household wastes 31.9%, which is "+ (Number(31.9)-Number(think))/Number(think)*100 + " % more than you think. Good try though! For more, be sure to check out the 'How much food do you waste?' quiz on my site!")}
+</script>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+
+</style>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong><font size="6">The Issue of Food Waste</font></strong>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <body>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Statistics</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Information</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">About</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">How you can help</button>
+
+<div id="Home" align=center class="tabcontent">
+<div align=center class="magog">
+<img class="ring" src="https://upload.wikimedia.org/wikipedia/en/b/bb/Male_Bathroom_Symbol.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<img class="gong" hspace="20" src="unnamed.png">
+<p align=center>1/10 people suffers from starvation</p>
+ </div>
+
+<div align=center>
+<br><br><br><br><br>
+<h3>Hover over the box below to find out how much food the average household wastes!</h3>
+
+<div class="flip-box">
+  <div class="flip-box-inner"> 
+    <div class="flip-box-front">
+      <h3>
+      
+
+
+      Hover over me to find out!</h3>
+    </div>
+    <div class="flip-box-back">
+      <h2>31.9%</h2>
+      <h5>31.9% of food that goes into each house is wasted.</h5>
+      <h5>31.9% is A LOT</h5>
+    </div>
+  </div>
+</div>
+</div>
+<div align=center id="piechart2" style="margin-right:300px"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Homes', 44],
+  ['Restaurants', 33],
+  ['Grocery Stores', 11],
+  ['Institutional', 10],
+  ['Industrial', 2]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Who wastes the most food?', 'width':550, 'height':400};
+
+  // Display the chart inside the   element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
+</script>
+
+
+<div align=center style="margin-right:300px" id="piechart1"></div>
+
+
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Could have been eaten', 63],
+  ['Could not have been eaten', 37],
+
+]);
+
+  var options = {'title':'Food that goes into your house that is wasted', 'width':550, 'height':400};
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+  chart.draw(data, options);
+}
+</script>
+<img align=center class="img22"src="https://lovefoodhatewaste.ca/wp-content/uploads/2018/07/What-Is-Wasted-EN-1024x619.png">
+
+</div>
+
+
+
+
+
+
+<div id="News" class="tabcontent">
+
+
+<div class=bonkers>
+
+<div class="dropdown">
+  <span>Links and Resources</span>
+  <div class="dropdown-content">
+  <p align=left>
+"How Much Food Does The Average US Household Waste?." Medicalnewstoday.Com, 2020, <a href="https://www.medicalnewstoday.com/articles/study-suggests-u-s-households-waste-nearly-a-third-of-the-food-they-acquire">https://www.medicalnewstoday.com/articles/study-suggests-u-s-households-waste-nearly-a-third-of-the-food-they-acquire</a></p>
+
+<p align=left>Arsenault, Chris, and Chris Arsenault. "Thirty Percent Of The World's Food Wasted." Aljazeera.Com, 2014, <a href="https://www.aljazeera.com/indepth/features/2014/10/thirty-percent-world-food-wasted-2014103192739208584.html">https://www.aljazeera.com/indepth/features/2014/10/thirty-percent-world-food-wasted-2014103192739208584.html</a></p>
+
+<p align=left>"Homelessness In Toronto - Facts And Statistics - Fred Victor." Fred Victor, 2020, <a href="https://www.fredvictor.org/facts-about-homelessness-in-toronto/">https://www.fredvictor.org/facts-about-homelessness-in-toronto/</a></p>
+
+<p align=left>"Give With Confidence." Secure.Unicef.Ca, 2020, <a href="https://secure.unicef.ca/page/31858/donate/1">https://secure.unicef.ca/page/31858/donate/1</a></p>
+
+<p align=left>"Food Waste: One Of The Biggest Problems Today And How We Can Solve It!". Fairmeals Blog, 2018, <a href="http://fairmeals.com/blog/blog/2018/04/19/food-waste-biggest-problem-today-how-to-solve-it/">http://fairmeals.com/blog/blog/2018/04/19/food-waste-biggest-problem-today-how-to-solve-it/</a></p>
+
+<p align=left>"Food Waste In The Home". Lovefoodhatewaste, 2020, <a href="https://lovefoodhatewaste.ca/about/food-waste/">https://lovefoodhatewaste.ca/about/food-waste/</a></p>
+
+<p align=left>"Understanding Food Waste". Partselect.Com, 2015, <a href="https://www.fix.com/blog/food-waste/">https://www.fix.com/blog/food-waste/</a></p> 
+
+<p align=left>"The world's food waste problem" Youtube, 2020, <a href="https://www.youtube.com/watch?time_continue=102&v=3m2KglQuevo&feature=emb_title">https://www.youtube.com/watch?time_continue=102&v=3m2KglQuevo&feature=emb_title</a></p>
+<p align=left>"Goal 2 .:. Sustainable Development Knowledge Platform." Sustainabledevelopment.Un.Org, 2020, <a href="https://sustainabledevelopment.un.org/sdg2">https://sustainabledevelopment.un.org/sdg2</a></p>
+
+
+  </div>
+</div>
+</div>
+<div align=center><figure><button align=right class="button22" type="button" onclick="window.location.href = 'http://www.quiz-maker.com/QNPICNWP'" target="_blank">Take the quiz now!</button><br><br><br><br><br><figcaption>Did you know that 31.9% of food is wasted? Did you know that 63% of food wasted is edible? Take the quiz and test your knowledge!</figcaption></figure></div>
+<div>
+<br>
+<div class="matter">
+<p><font size="11" color="black">F</font>ood waste is a growing issue on our planet. 63% of food that is wasted could still be eaten. To further understand this topic, it is necessary to define food waste. <b>Food loss</b> refers to when groceries or other foods are harmed before reaching the market.<b> Food waste</b> is when food is thrown out <i>after</i> it has reached the market for aesthetic reasons. For example, food might have gone bad overnight, or maybe it didn’t look good so somebody threw it out. The average household wastes 140 kilograms each year, and 63% of this food could still be eaten. Of this, 30% are vegetables, 15% are fruit, 9% are bakery products, and 7% are dairy and poultry products. </p>
+
+<p>So why does food waste happen? Well, we need to trace it back to the farms. Farmers sign a deal with <br><br><br><br><br><br><br>large companies about how much food they will deliver. This is not dependent on how well the crop is but is just a specific number. So should they have a bad crop, they still need to deliver the same amount to the companies. He or she has two options:</p>
+<ul><li>Buy from other people and deliver that product to the companies</li>
+<li>Sow more than you are to deliver so that it allows for a little bit of leeway</li></ul>
+<p>Most farmers chose to overgrow, because this method is fool-proof. However, with this method much food is uneaten and wasted. </p>
+
+<p><br><br><br><br><br>Customers buying food have become pickier as the years go by. Consumers demand the perfect size and shape for their standard food. The red apple, the shiny golden banana, and 
+the crisp loaf of bread. If they don’t get food that pleases them, they don’t buy anything and this food goes bad and gets thrown out. So in order to prevent this, supermarkets only put the best products on their aisles and throw out the rest.</p>
+
+<p>Food waste has many impacts. Forests are cut down to make more room for crop fields so that farmers can overgrow. In the world, 820 million people are suffering from starvation, one of the world’s largest death causes. 1/10 people cannot get enough food and with the COVID-19 crisis going on as it is, it has become even harder for these people to get their food. The sustainable development goal of no hunger is slipping farther and farther away from their two goals by 2030</p>
+<br><br><br><br>
+</div>
+<div><iframe width="963.2" height="541.8" src="https://www.youtube.com/embed/3m2KglQuevo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images-1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images-2.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+
+<div id="Contact" class="tabcontent">
+
+<h2>What is an SDG?</h2>
+<p>SDGs are sustainable development goals that were adopted by all members of the United Nations in 2015. These goals are a way that the United Nations are trying to end poverty and protect the planet. These goals aim to be acomplished in 2030. There are seventeen SDG topics such as no poverty, no hunger, and life underwater. Through the pledge of "Leave no one behind," the United Nations are working on those who are furthest behind first. </p>
+
+<p> My SDG topic that this website was built about is the topic of No Hunger</p>
+<img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2015/12/english_SDG_17goals_poster_all_languages_with_UN_emblem_1.png"><br><br><br>
+<img style="width:50%; height:50%;" src="https://www.unoosa.org/images/ourwork/SDGs/E_SDG_goals_icons-individual-rgb-02.png">
+<h3>No Hunger's Targets Are:</h3>
+<ol>
+  <li>By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round</li><br>
+  <li>By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons</li><br>
+  <li>By 2030, double the agricultural productivity and incomes of small-scale food producers, in particular women, indigenous peoples, family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment</li><br>
+  <li>By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality</li><br>
+  <li>By 2020, maintain the genetic diversity of seeds, cultivated plants and farmed and domesticated animals and their related wild species, including through soundly managed and diversified seed and plant banks at the national, regional and international levels, and promote access to and fair and equitable sharing of benefits arising from the utilization of genetic resources and associated traditional knowledge, as internationally agreed</li><br>
+  <li>Increase investment, including through enhanced international cooperation, in rural infrastructure, agricultural research and extension services, technology development and plant and livestock gene banks in order to enhance agricultural productive capacity in developing countries, in particular least developed countries</li><br>
+  <li>Correct and prevent trade restrictions and distortions in world agricultural markets, including through the parallel elimination of all forms of agricultural export subsidies and all export measures with equivalent effect, in accordance with the mandate of the Doha Development Round</li><br>
+  <li>Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, in order to help limit extreme food price volatility</li><br>
+</ol>
+<br><br><br><br><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<h2 style="text-align:center">About Me</h2>
+
+<div class="card">
+  <img src="IMG_0171.jpeg" alt="John" style="width:100%">
+  <p><font size="5" color="black">Caleb Chong</font><p>
+  <p class="title">Website Creator</p>
+  <p><font color="black">Upper Canada College</font></p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button class="button55">Contact</button></p>
+</div>
+
+</div>
+
+<div id="About" class="tabcontent">
+ <h3>How to help</h3>
+ <button style="float:right;"class="button22" type="button" onclick="window.location.href = 'https://secure.unicef.ca/page/33582/donate/1?ea.tracking.id=00DIEM05XXE'"target="_blank">Donate</button>
+<ol align=left>
+  <li>Be conscious of the food you waste</li>
+  <li>Don't cook more than you can eat</li>
+  <li>Don't buy more food than you can eat</li>
+  <li>Look for later expiration and best before dates</li>
+  <li>Donate to UNICEF's Food Crisis Relief Fund</li>
+</ol>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+</style>
+
+
+
+
+
+<div class="callout">
+  <div class="callout-header">Welcome!</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p>Welcome to my website. I hope you like it. For more information contact <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=caleb.chong@ucc.on.ca">caleb.chong@ucc.on.ca</a></p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+
+<script src="calebchongsecondwebsite.js"></script>
+
+
+</body>
+</html>
